@@ -6,7 +6,6 @@
 .home {
   height: 100vh;
   width: 100vw;
-  z-index: -1;
   display: flex;
   flex-direction: column;
 }
@@ -18,10 +17,9 @@
   min-height: 200%;
   min-width: auto;
   top: -200px;
-  background-color: black;
 }
 .projects {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   position: relative;
   display: flex;
@@ -53,45 +51,45 @@ span {
 
 .canvas {
   background-color: #f8f7f6;
-  height: 100vh;
-  width: auto;
+  width: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  display: inline-block;
+  min-height: 100vh;
 }
 
 .about-me {
   color: #5158bb;
   font-size: 6.5rem;
-  z-index: 40;
   display: flex;
   justify-content: center;
   font-family: "Rubik";
   margin-bottom: 40px;
   margin-top: 0px;
   padding-top: 20px;
+  flex-direction: row;
 }
 .me {
-  height: 60vh;
-  width: auto;
+  max-width: 40%;
+  height: auto;
   top: 70px;
   border: 20px solid #767676;
   margin-left: 15%;
+  display: inline-block;
 }
 
 .about-me-p {
-  width: 60%;
+  display: inline-block;
   margin-left: 70px;
-  margin-right: 15%;
   margin-top: 50px;
+  margin-right: 70px;
   color: rgba(10, 10, 10, 1);
   font-size: 24px;
+  max-width: 600px;
 }
 .firstp {
   margin-top: 0;
-}
-.img-and-text {
-  flex-direction: row;
-  display: flex;
+  display: inline-block;
 }
 
 .contact {
@@ -104,10 +102,11 @@ a {
 
 .projects-canvas {
   background-color: #5158bb;
-  min-height: 100vh;
+  height: auto;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  display: inline-block;
 }
 
 .projects-container {
@@ -116,12 +115,12 @@ a {
   justify-content: center;
   padding-right: 7vw;
   padding-left: 7vw;
+  flex-wrap: wrap;
 }
 
 .projects-title {
   color: #f8f7f6;
   font-size: 6.5rem;
-  z-index: 40;
   display: flex;
   justify-content: center;
   font-family: "Rubik";
